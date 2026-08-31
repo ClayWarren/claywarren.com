@@ -1,0 +1,16 @@
+{
+  "name": "Clay Warren",
+  "short_name": "Clay Warren",
+  "description": "Founder of TaskForceAI and builder of LaserShark.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#11100e",
+  "theme_color": "#11100e",
+  "icons": [
+    {
+      "src": "/static/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
