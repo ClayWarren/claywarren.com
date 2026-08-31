@@ -48,37 +48,76 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://claywarren.com/#clay-warren",
-        "name": "Clay Warren",
-        "givenName": "Clay",
-        "familyName": "Warren",
-        "alternateName": "ClayWarren",
-        "url": "https://claywarren.com/",
-        "mainEntityOfPage": "https://claywarren.com/",
-        "image": "https://claywarren.com/static/clay-warren.jpg",
-        "description": "Founder of TaskForceAI and builder of LaserShark, working across multi-agent systems, geospatial tooling, native maps, and cross-platform open source.",
-        "jobTitle": "Founder of TaskForceAI and software engineer at Hobu, Inc.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Hobu, Inc.",
-          "url": "https://hobu.co/"
-        },
-        "knowsAbout": [
-          "Multi-agent systems",
-          "Artificial intelligence",
-          "Geospatial software",
-          "Point clouds",
-          "Native maps",
-          "Cross-platform open source",
-          "Release engineering"
-        ],
-        "sameAs": [
-          "https://github.com/ClayWarren",
-          "https://www.linkedin.com/in/clay-warren/",
-          "https://x.com/claymwarren",
-          "https://www.instagram.com/claymwarren/",
-          "https://pypi.org/user/claywarren/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://claywarren.com/#website",
+            "url": "https://claywarren.com/",
+            "name": "Clay Warren",
+            "alternateName": "ClayWarren",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://claywarren.com/#clay-warren" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://claywarren.com/#profile-page",
+            "url": "https://claywarren.com/",
+            "name": "Clay Warren — Founder of TaskForceAI, Builder of LaserShark",
+            "description": "Clay Warren is the founder of TaskForceAI and builds LaserShark at Hobu, working across multi-agent systems and geospatial infrastructure.",
+            "isPartOf": { "@id": "https://claywarren.com/#website" },
+            "mainEntity": { "@id": "https://claywarren.com/#clay-warren" },
+            "about": { "@id": "https://claywarren.com/#clay-warren" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://claywarren.com/static/clay-warren.jpg",
+              "width": 460,
+              "height": 460
+            },
+            "dateModified": "2026-08-30"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://claywarren.com/#clay-warren",
+            "name": "Clay Warren",
+            "givenName": "Clay",
+            "familyName": "Warren",
+            "alternateName": "ClayWarren",
+            "url": "https://claywarren.com/",
+            "mainEntityOfPage": { "@id": "https://claywarren.com/#profile-page" },
+            "image": "https://claywarren.com/static/clay-warren.jpg",
+            "description": "Founder of TaskForceAI and builder of LaserShark, working across multi-agent systems, geospatial tooling, native maps, and cross-platform open source.",
+            "jobTitle": "Founder of TaskForceAI and software engineer at Hobu, Inc.",
+            "worksFor": [
+              {
+                "@type": "Organization",
+                "@id": "https://www.taskforceai.chat/#organization",
+                "name": "TaskForceAI",
+                "url": "https://www.taskforceai.chat/home",
+                "founder": { "@id": "https://claywarren.com/#clay-warren" }
+              },
+              {
+                "@type": "Organization",
+                "name": "Hobu, Inc.",
+                "url": "https://hobu.co/"
+              }
+            ],
+            "knowsAbout": [
+              "Multi-agent systems",
+              "Artificial intelligence",
+              "Geospatial software",
+              "Point clouds",
+              "Native maps",
+              "Cross-platform open source",
+              "Release engineering"
+            ],
+            "sameAs": [
+              "https://github.com/ClayWarren",
+              "https://www.linkedin.com/in/clay-warren/",
+              "https://x.com/claymwarren",
+              "https://www.instagram.com/claymwarren/",
+              "https://pypi.org/user/claywarren/"
+            ]
+          }
         ]
       }
     </script>

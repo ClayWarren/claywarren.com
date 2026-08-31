@@ -2,6 +2,7 @@
   "name": "claywarren-com",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "bun@1.4.0",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
