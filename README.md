@@ -28,3 +28,15 @@ bun run preview
 ## SEO surface
 
 The homepage includes canonical metadata, social cards, a `WebSite` / `ProfilePage` / `Person` JSON-LD graph, a stable favicon, `robots.txt`, and `sitemap.xml`.
+
+## WDV101 coursework
+
+Edit coursework in `public/wdv101/`; Vite copies these plain HTML projects and
+their assets directly into the production build. The homepage footer links to
+`/wdv101/homework.html`, which links to the Koala and Pathname projects.
+
+Coursework HTML includes `noindex, nofollow`, and a scoped Vercel
+`X-Robots-Tag` header covers coursework assets as well. Keep this section out
+of the sitemap. It is publicly accessible by URL.
+
+Retain the supplied nested folders and relative paths for future lessons.
