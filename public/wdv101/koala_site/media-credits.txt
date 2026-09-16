@@ -1,0 +1,11 @@
+All three photographs are unmodified and licensed under CC BY-SA 3.0.
+koala-and-joey.jpg: Benjamint444; https://commons.wikimedia.org/wiki/File:Koala_and_joey.jpg
+koala-climbing-tree.jpg: DAVID ILIFF; https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg
+koala-resting.jpeg: Mike Richey; https://commons.wikimedia.org/wiki/File:Koala02.jpeg
+License: https://creativecommons.org/licenses/by-sa/3.0/
+
+Video: Koala in motion by CharlieBarbarossa
+https://commons.wikimedia.org/wiki/File:Koala_in_motion.webm
+Original source: https://www.youtube.com/watch?v=cM3reGH3Cj4
+License: https://creativecommons.org/licenses/by/3.0/
+Modified: converted to MP4/H.264, resized to 960 pixels wide, removed audio.
