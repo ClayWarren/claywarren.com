@@ -1,0 +1,124 @@
+/* Clay Warren | WDV101 assignments 5-2 and 6-1 | September 23, 2026 */
+
+/* Element selectors: the soft body color uses HSL notation. */
+body {
+  margin: 0;
+  background-color: hsl(85, 30%, 94%);
+  color: #253a30;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Grouped selectors share the same page width. */
+header, nav, main, footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 1.5rem;
+  background-color: #244b3a;
+  color: ivory; /* Named color: light text on a dark background. */
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #305b46;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.3;
+}
+
+p {
+  color: rgb(45, 62, 51); /* RGB color notation. */
+  margin: 0 0 1rem;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Descendant selector: only the image within the header. */
+header img {
+  display: block;
+  width: 100%;
+}
+
+main { padding: 1.5rem; box-sizing: border-box; }
+section { margin-bottom: 2.5rem; }
+figure { margin: 0; }
+figure img { display: block; border-radius: 0.35rem; }
+figcaption { max-width: 42rem; margin-top: 0.75rem; font-size: 0.875rem; }
+
+/* Independent class: usable on paragraphs, sections, or other elements. */
+.highlight {
+  padding: 1rem 1.25rem;
+  background-color: #e0ead6;
+  border-left: 0.3rem solid #537348;
+}
+
+/* Dependent class: applies only to a paragraph with class intro. */
+p.intro { font-size: 1.125rem; font-weight: 500; }
+
+/* First-letter pseudo-element on the first paragraph of every page. */
+.intro::first-letter {
+  color: #305b46;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Both kinds of content lists receive explicit marker styles and positions. */
+main ul { list-style-type: square; list-style-position: outside; padding-left: 1.5rem; }
+main ol { list-style-type: upper-roman; list-style-position: outside; padding-left: 2rem; }
+main li { margin-bottom: 0.75rem; padding-left: 0.25rem; }
+
+/* Hyperlink pseudo-classes. */
+a:link { color: #215b45; text-decoration: underline; text-underline-offset: 0.2em; }
+a:visited { color: #69476d; }
+a:hover { color: #763a20; text-decoration-thickness: 0.15em; }
+a:focus { outline: 3px solid #ae631d; outline-offset: 3px; }
+a:active { color: #842727; }
+
+/* Inline navigation: no bullets or underlines, with hover and focus feedback. */
+nav { background-color: #244b3a; color: ivory; }
+nav ul { list-style-type: none; margin: 0; padding: 0.5rem; text-align: center; }
+nav li { display: inline-block; }
+nav a:link, nav a:visited {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  color: ivory;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+nav a[aria-current="page"] { background-color: #416750; }
+nav a:hover, nav a:focus {
+  background-color: #edf2de;
+  color: #244b3a;
+  text-decoration: none;
+}
+nav a:focus { outline-color: #e3b56b; outline-offset: -3px; }
+nav a:active { background-color: #d4dfbf; }
+
+footer {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-top: 2px solid #cedbc4;
+  text-align: center;
+  font-size: 0.875rem;
+}
+footer img { margin-bottom: 1rem; }
+
+@media (max-width: 36rem) {
+  main { padding: 1rem; }
+  h1 { padding: 1.25rem 1rem; }
+  nav a:link, nav a:visited { padding: 0.6rem 0.75rem; }
+}
