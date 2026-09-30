@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Find the questions and answers supplied in the Koala Site coursework.">
   <meta name="author" content="Clay Warren">
-  <title>Frequent Asked Questions | Koala Bear National Information Center</title>
+  <title>Frequently Asked Questions | Koala Bear National Information Center</title>
   <!-- Clay Warren | WDV101 | Koala Website Step 1 | September 9, 2026 -->
   <meta name="robots" content="noindex, nofollow">
+  <!-- Google Fonts link method with system fallbacks in styles.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header id="top">
     <!-- Shared banner and navigation appear on every page. -->
-    <h1>Frequent Asked Questions</h1>
+    <h1>Frequently Asked Questions</h1>
     <img src="images/koala_banner.jpg" alt="Koala website banner">
   </header>
   <nav aria-label="Main navigation">
@@ -26,9 +30,11 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main>
+  <!-- CSS multi-column layout is scoped to this page only. -->
+  <main class="faq-columns">
+    <h2 class="faq-heading">Your Questions About Koalas</h2>
     <section>
-      <h2>A Resting Koala</h2>
+      <h3>A Resting Koala</h3>
       <figure>
         <img src="images/koala-resting.jpeg" alt="A koala resting with its eyes closed between branches." width="480" style="max-width: 100%; height: auto;">
         <figcaption>Photo by Mike Richey: <a href="https://commons.wikimedia.org/wiki/File:Koala02.jpeg">A Resting Koala</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Original image, displayed at a smaller size.</figcaption>
@@ -36,7 +42,7 @@
     </section>
 
     <section>
-      <h2>Questions and Answers</h2>
+      <h3>Questions and Answers</h3>
       <ul>
         <li>
           <p class="intro"><em>What does a Koala bear look like?</em></p>
@@ -89,11 +95,11 @@
       </ul>
     </section>
     <section>
-      <h2>Learn More</h2>
+      <h3>Learn More</h3>
       <p><a href="documents/KoalasFactSheet-1.pdf" target="_blank" rel="noopener noreferrer">Koala Fact Sheet PDF</a></p>
     </section>
     <section>
-      <h2>Watch a Koala Move Through a Tree</h2>
+      <h3>Watch a Koala Move Through a Tree</h3>
       <video controls preload="metadata" width="640" style="max-width: 100%; height: auto;" aria-label="A koala moving between branches">
         <source src="videos/koala-in-motion.mp4" type="video/mp4">
         <p>Your browser does not support HTML5 video. <a href="videos/koala-in-motion.mp4">Download the koala video</a>.</p>
