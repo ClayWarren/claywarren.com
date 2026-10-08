@@ -13,11 +13,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- Embedded CSS: a welcome treatment used only on the home page. -->
-  <style>
-    .welcome { border-bottom: 2px solid #b3c6a3; padding-bottom: 1rem; }
-    .welcome h2 { letter-spacing: 0.04em; }
-  </style>
 </head>
 <body>
   <header id="top">
@@ -36,17 +31,25 @@
     </ul>
   </nav>
   <main>
-    <section>
+    <section class="photo-story">
       <h2>Koala and Joey</h2>
-      <figure>
-        <img src="images/koala-and-joey.jpg" alt="A koala carrying its joey on its back in a tree." width="480" style="max-width: 100%; height: auto;">
-        <figcaption>Photo by Benjamint444: <a href="https://commons.wikimedia.org/wiki/File:Koala_and_joey.jpg">Koala and Joey</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Original image, displayed at a smaller size.</figcaption>
-      </figure>
+      <div class="image-wrap">
+        <h3>A Koala Family</h3>
+        <img class="float-left" src="images/koala-and-joey.jpg" alt="A koala carrying its joey on its back in a tree." width="240">
+        <p class="intro">The photograph shows a joey riding on an adult koala. Look closely at the way both animals hold onto the tree branches.</p>
+        <p class="photo-credit">Photo by Benjamint444: <a href="https://commons.wikimedia.org/wiki/File:Koala_and_joey.jpg">Original photo</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+      </div>
+      <div class="image-wrap">
+        <h4>Holding On to the Trees</h4>
+        <img class="float-right" src="images/koala-climbing-tree.jpg" alt="A koala gripping the trunk of a tree." width="240">
+        <p>This close view shows a koala gripping a tree trunk. The branches and trunk give the animal a place to climb and rest.</p>
+        <p class="photo-credit">Photo by DAVID ILIFF: <a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">Original photo</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+      </div>
     </section>
 
     <section class="welcome">
       <h2>Welcome</h2>
-      <p class="intro">Welcome to the Koala Bear National Information Center! In this site you can learn about Koala bears, adopt a Koala, give to our foundation, sign up for our newsletter, or schedule a visit. Please take some time to explore the information provided in this site!</p>
+      <p >Welcome to the Koala Bear National Information Center! In this site you can learn about Koala bears, adopt a Koala, give to our foundation, sign up for our newsletter, or schedule a visit. Please take some time to explore the information provided in this site!</p>
     </section>
     <section>
       <h2>Our Mission</h2>
@@ -55,7 +58,7 @@
     </section>
     <section class="highlight">
       <h2>Help Protect Koalas</h2>
-      <p><strong style="color: #763a20;">Koalas are disappearing.</strong> Loss of koala habitat and koala food trees (eucalyptus leaves) is the leading koala threat. Our cuddly koalas are loved around the world. Often called a koala bear, they are actually marsupials not koala bears. Please help koalas by supporting the Australian Koala Foundation.</p>
+      <p><strong class="urgent">Koalas are disappearing.</strong> Loss of koala habitat and koala food trees (eucalyptus leaves) is the leading koala threat. Our cuddly koalas are loved around the world. Often called a koala bear, they are actually marsupials not koala bears. Please help koalas by supporting the Australian Koala Foundation.</p>
     </section>
     <section>
       <h2>Explore the Center</h2>
@@ -67,7 +70,7 @@
     </section>
     <section>
       <h2>Watch a Koala Move Through a Tree</h2>
-      <video controls preload="metadata" width="640" style="max-width: 100%; height: auto;" aria-label="A koala moving between branches">
+      <video controls preload="metadata" width="640" aria-label="A koala moving between branches">
         <source src="videos/koala-in-motion.mp4" type="video/mp4">
         <p>Your browser does not support HTML5 video. <a href="videos/koala-in-motion.mp4">Download the koala video</a>.</p>
       </video>
