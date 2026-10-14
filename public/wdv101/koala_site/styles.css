@@ -10,10 +10,23 @@ body {
   line-height: 1.7;
 }
 
-/* Grouped selectors share the same page width. */
+/* Assignment 9-1: fixed desktop width; capped to fit smaller screens. */
+.site-container {
+  width: 1024px;
+  max-width: calc(100% - 2rem);
+  margin: 2rem auto;
+  padding: 0;
+  border: 1px solid #b3c6a3;
+  background-color: #f7f9f3;
+  box-shadow: 0 0.5rem 1.5rem rgb(36 75 58 / 12%);
+  box-sizing: border-box;
+}
+
+/* Semantic regions stack into a single outer column inside the container. */
 header, nav, main, footer {
-  max-width: 64rem;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -180,3 +193,27 @@ h4 { font-size: 1.1rem; }
 .welcome h2 { letter-spacing: 0.04em; }
 .urgent { color: #763a20; }
 .faq-columns .image-wrap { break-inside: avoid; }
+
+/* Semantic element spacing and colors for assignment 9-1. */
+header { padding: 0; background-color: #244b3a; color: ivory; }
+nav { padding: 0.25rem 0; border-bottom: 3px solid #b3c6a3; }
+main { padding: 1.5rem; background-color: #f7f9f3; }
+main section {
+  margin: 0 0 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #d5dfcd;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: #253a30;
+}
+main section:last-child { margin-bottom: 0; }
+main section.highlight { background-color: #e0ead6; border-left: 0.3rem solid #537348; }
+main section > h2:first-child { margin-top: 0; }
+footer { margin-top: 0.5rem; padding: 1.5rem; background-color: #e7edde; color: #244b3a; }
+.faq-columns section { padding: 0.75rem; }
+
+@media (max-width: 36rem) {
+  .site-container { max-width: calc(100% - 1rem); margin: 0.5rem auto; }
+  main { padding: 0.75rem; }
+  main section { padding: 0.75rem; }
+}
