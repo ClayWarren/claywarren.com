@@ -1,6 +1,6 @@
 # claywarren.com
 
-The personal site for [Clay Warren](https://claywarren.com), founder of TaskForceAI and builder of LaserShark at Hobu.
+The personal site for [Clay Warren](https://claywarren.com), software engineer at Hobu and builder of LaserShark.
 
 ## Stack
 
