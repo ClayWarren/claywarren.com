@@ -1,0 +1,39 @@
+/* Clay Warren | WDV101 assignment 11-2 | October 28, 2026 */
+/* Flex items wrap into as many columns as the available width permits. */
+.koala-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.koala-gallery figure {
+  flex: 0 1 250px;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.koala-gallery img {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0.3rem;
+  background-color: white;
+  border: 1px solid #9caf96;
+}
+.koala-gallery figcaption {
+  margin: 0.5rem 0 0;
+  padding: 0 0.25rem;
+  color: #305b46;
+  font-weight: bold;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 36rem) {
+  .koala-gallery { padding: 1rem; gap: 1rem; }
+}
