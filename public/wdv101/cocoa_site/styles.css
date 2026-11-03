@@ -1,0 +1,59 @@
+/* Clay Warren | WDV101 Cocoa Site | All presentation is external. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #e9e0d2; color: #35261f; font: 1rem/1.8 Arial, Helvetica, sans-serif; }
+/* Fixed desktop width within the required 960–1200px range. */
+.container { width: 1080px; max-width: calc(100% - 2rem); margin: 2rem auto; background: #fffaf1; border: 1px solid #d8c7b0; }
+header { padding: 1.75rem 3rem 1rem; background: #3f281e; color: #fff4df; }
+.brand { font: 600 2.6rem/1.2 'Lora', Georgia, serif; letter-spacing: -0.03em; text-decoration: none; }
+header .brand:link, header .brand:visited { color: #fff4df; }
+header p { margin: 0.5rem 0 0; color: #e2cdb3; font-size: 0.875rem; }
+nav { border-bottom: 1px solid #d8c7b0; background: #f0e4d1; padding: 0.25rem 2rem; }
+nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; list-style: none; margin: 0; padding: 0; }
+nav a { display: inline-block; padding: 0.8rem 0.5rem; text-decoration: none; font-weight: bold; border-bottom: 3px solid transparent; }
+nav a[aria-current="page"] { border-bottom-color: #94552e; }
+a:link { color: #7c3e22; text-underline-offset: 0.2em; }
+a:visited { color: #70475c; }
+a:hover { color: #47291e; text-decoration: underline; }
+a:focus-visible { outline: 3px solid #a65b28; outline-offset: 4px; }
+main { padding: 0 3rem; }
+.introduction { padding: 2.5rem 0 1.5rem; animation: enter 500ms ease-out; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.13em; font-size: 0.75rem; font-weight: bold; color: #8b512e; }
+h1, h2, h3 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-weight: 600; color: #482d21; }
+h1 { max-width: 20ch; margin: 0.4rem 0 1rem; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.2; letter-spacing: -0.035em; }
+.lead { max-width: 42rem; font-size: 1.15rem; }
+p { margin: 0 0 1rem; }
+h2 { margin: 1.5rem 0 1rem; padding: 1rem 0 0.25rem; border-top: 1px solid #cbb59c; font-size: 1.8rem; line-height: 1.35; }
+h3 { margin: 1.25rem 0 1rem; padding: 0.75rem 0 0; border-top: 1px solid #e4d7c6; font-size: 1.2rem; line-height: 1.4; }
+.story { display: flow-root; margin: 0 0 2rem; padding: 0 0 1rem; }
+img { max-width: 100%; height: auto; margin: 0.5rem 0 1rem; border: 1px solid #b69c80; padding: 0.25rem; background: #fffdf7; }
+.chocolate-banner { display: block; width: 100%; padding: 0; margin: 0 0 1.5rem; }
+.float-right { float: right; width: 280px; max-width: 42%; margin: 0.25rem 0 1.25rem 2rem; }
+.float-left { float: left; width: 240px; max-width: 40%; margin: 0.25rem 2rem 1.25rem 0; }
+.caption { font-size: 0.8rem; color: #755d4e; }
+.sources { clear: both; padding: 0.5rem 0 1.75rem; font-size: 0.85rem; }
+.sources ul { padding-left: 1.25rem; }
+.sources h2 { font-size: 1.15rem; }
+.image-credit { line-height: 1.65; color: #665447; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; padding: 1.5rem 3rem; border-top: 1px solid #d8c7b0; background: #f0e4d1; font-size: 0.8rem; }
+footer p { margin: 0; }
+nav a { transition: border-color 180ms ease, color 180ms ease; }
+a img { transition: border-color 180ms ease; }
+a:hover img, a:focus-visible img { border-color: #7c3e22; }
+@keyframes enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 40rem) {
+ .container { max-width: calc(100% - 1rem); margin: 0.5rem auto; }
+ header, footer { padding: 1.25rem; }
+ main { padding: 0 1.25rem; }
+ nav { padding: 0.25rem 0.75rem; }
+ nav ul { gap: 0.5rem; justify-content: space-between; }
+ nav a { padding: 0.65rem 0.25rem; font-size: 0.875rem; }
+ .introduction { padding-top: 1.5rem; }
+ .float-left { margin-right: 1rem; }
+ .float-right { margin-left: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+ html { scroll-behavior: auto; }
+ .introduction { animation: none; }
+ nav a, a img { transition: none; }
+}
