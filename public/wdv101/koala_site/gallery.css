@@ -1,4 +1,4 @@
-/* Clay Warren | WDV101 assignment 11-2 | October 28, 2026 */
+/* Clay Warren | WDV101 assignments 11-2 and 12-1 | November 11, 2026 */
 /* Flex items wrap into as many columns as the available width permits. */
 .koala-gallery {
   display: flex;
@@ -34,6 +34,20 @@
   text-align: center;
   overflow-wrap: anywhere;
 }
-@media (max-width: 36rem) {
-  .koala-gallery { padding: 1rem; gap: 1rem; }
+/* Assignment 12-1: responsive images throughout the gallery page. */
+img { max-width: 100%; height: auto; }
+
+/* At 768px and below, use one photo column and the entire viewport width. */
+@media (max-width: 768px) {
+  body { background-color: #dce8d3; }
+  .site-container { width: 100%; max-width: none; margin: 0; }
+  .koala-gallery {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: #e0ead6;
+  }
+  /* Reset the desktop flex basis because the main axis is now vertical. */
+  .koala-gallery figure { flex: 0 1 auto; width: 100%; max-width: 250px; }
 }

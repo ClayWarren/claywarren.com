@@ -25,9 +25,12 @@ figcaption { margin-top: 0.5rem; font-size: 0.75rem; line-height: 1.5; }
 p { margin: 0 0 1rem; }
 footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.5rem 2rem; border-top: 1px solid #bdc9b7; background: #dfe7d7; font-size: 0.875rem; }
 footer p { margin: 0; }
-@media (max-width: 44rem) {
+/* Assignment 12-2: stack content and navigation at 768px and below. */
+@media (max-width: 768px) {
  .container { max-width: calc(100% - 1rem); margin: 0.5rem auto; }
  header { padding: 1.5rem; }
+ nav ul { flex-direction: column; align-items: stretch; gap: 0; }
+ nav a { padding: 0.6rem 0; }
  .columns { flex-direction: column; padding: 1.5rem; gap: 2rem; }
  h2 { min-height: 0; }
  img { height: auto; }
