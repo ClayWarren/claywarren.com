@@ -7,7 +7,7 @@
   <meta name="author" content="Clay Warren">
   <meta name="robots" content="noindex, nofollow">
   <title>Koala Field Guide | WDV101</title>
-  <!-- Clay Warren | WDV101 assignment 13-1 | Bootstrap three-column layout -->
+  <!-- Clay Warren | WDV101 assignment 13-1 | Adapted from bootstrap_example_page.html -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,6 +23,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#habits">Field notes</a></li>
           <li class="nav-item"><a class="nav-link" href="#faq">Questions</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.dmacc.edu/">DMACC</a></li>
           <li class="nav-item"><a class="nav-link" href="../homework.html">WDV101 homework</a></li>
         </ul>
       </div>
@@ -38,30 +39,37 @@
     </header>
     <section class="container guide-section" id="habits" aria-labelledby="habits-title">
       <h2 id="habits-title">Three ways koalas use trees</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <article class="col">
-          <figure>
-            <img class="img-fluid field-photo" src="../koala_site/images/koala-climbing-tree.jpg" width="480" height="640" alt="A koala gripping a tree trunk among leaves.">
-            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">DAVID ILIFF</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
-          </figure>
-          <h3>Climbing</h3>
-          <p>Strong limbs and sharp claws help koalas grip bark. Look at how this koala wraps its limbs around the trunk to steady itself.</p>
+      <!-- The center column takes six grid units and each side takes three. -->
+      <div class="row g-4">
+        <article class="col-12 col-md-3">
+          <div class="h-100 rounded-2 p-3 bg-body-tertiary">
+            <figure>
+              <img class="img-fluid field-photo" src="../koala_site/images/koala-climbing-tree.jpg" width="480" height="640" alt="A koala gripping a tree trunk among leaves.">
+              <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">DAVID ILIFF</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+            </figure>
+            <h3>Climbing</h3>
+            <p>Strong limbs and sharp claws help koalas grip bark. Look at how this koala wraps its limbs around the trunk to steady itself.</p>
+          </div>
         </article>
-        <article class="col">
-          <figure>
-            <img class="img-fluid field-photo" src="../koala_site/images/koala-and-joey.jpg" width="480" height="640" alt="An adult koala carrying a joey on its back.">
-            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala_and_joey.jpg">Benjamint444</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
-          </figure>
-          <h3>Raising young</h3>
-          <p>After leaving the pouch, a joey can ride on its mother’s back. In this photo, the joey grips her fur while she holds onto the branch.</p>
+        <article class="col-12 col-md-6">
+          <div class="h-100 rounded-2 p-3 bg-success-subtle">
+            <figure>
+              <img class="img-fluid field-photo" src="../koala_site/images/koala-and-joey.jpg" width="480" height="640" alt="An adult koala carrying a joey on its back.">
+              <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala_and_joey.jpg">Benjamint444</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+            </figure>
+            <h3>Raising young</h3>
+            <p>After leaving the pouch, a joey can ride on its mother’s back. In this photo, the joey grips her fur while she holds onto the branch.</p>
+          </div>
         </article>
-        <article class="col">
-          <figure>
-            <img class="img-fluid field-photo" src="../koala_site/images/koala-resting.jpeg" width="480" height="480" alt="A koala with closed eyes resting between branches.">
-            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala02.jpeg">Mike Richey</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
-          </figure>
-          <h3>Resting</h3>
-          <p>Koalas spend much of the day resting. A fork in a tree offers a perch where a koala can settle with its body supported on both sides.</p>
+        <article class="col-12 col-md-3">
+          <div class="h-100 rounded-2 p-3 bg-body-tertiary">
+            <figure>
+              <img class="img-fluid field-photo" src="../koala_site/images/koala-resting.jpeg" width="480" height="480" alt="A koala with closed eyes resting between branches.">
+              <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala02.jpeg">Mike Richey</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+            </figure>
+            <h3>Resting</h3>
+            <p>Koalas spend much of the day resting. A fork in a tree offers a perch where a koala can settle with its body supported on both sides.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -90,9 +98,11 @@
       </div>
     </section>
   </main>
-  <footer class="container guide-footer">
-    <p>Clay Warren · WDV101</p>
-    <p>Header photo by <a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">DAVID ILIFF</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+  <footer class="bg-dark text-light">
+    <div class="container guide-footer">
+      <p>Clay Warren · WDV101</p>
+      <p>Header photo by <a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">DAVID ILIFF</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

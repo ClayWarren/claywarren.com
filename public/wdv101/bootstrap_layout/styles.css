@@ -45,5 +45,7 @@ figcaption { margin-top: 0.45rem; font-size: 0.8rem; }
 .accordion { --bs-accordion-active-bg: #d9e5d1; --bs-accordion-active-color: #233e2d; }
 .guide-footer { padding-block: 1.4rem; font-size: 0.875rem; }
 .guide-footer p { margin-bottom: 0.25rem; }
+.guide-footer a { color: #e9d9a4; }
+.guide-footer a:hover { color: #fff0c2; }
 .skip-link { position: absolute; z-index: 10; padding: 0.5rem 1rem; background: #fff; }
 :focus-visible { outline: 3px solid #9b5a23; outline-offset: 3px; }
