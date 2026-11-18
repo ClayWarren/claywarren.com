@@ -1,0 +1,49 @@
+/* Custom colors, typography, and photo treatment for the field guide. */
+body {
+  --bs-body-bg: #f7f4e9;
+  --bs-body-color: #28382e;
+  --bs-link-color-rgb: 41, 87, 60;
+  --bs-link-hover-color-rgb: 27, 58, 41;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  line-height: 1.65;
+}
+
+h1, h2, h3, .navbar-brand { font-family: Georgia, serif; }
+.guide-nav { background: #172f24; }
+.guide-nav .nav-link { color: #e9eee6; }
+.guide-nav .nav-link:hover { text-decoration: underline; }
+
+.guide-hero {
+  color: #fffdf4;
+  background: linear-gradient(90deg, rgb(15 31 23 / 95%), rgb(15 31 23 / 70%)),
+    #172f24 url("../koala_site/images/koala-climbing-tree.jpg") center 42% / cover no-repeat;
+}
+
+.hero-copy { padding-block: clamp(3.5rem, 9vw, 7.5rem); }
+.hero-copy h1 { max-width: 14ch; font-size: clamp(2.55rem, 6vw, 5rem); line-height: 1.04; }
+.hero-copy p { max-width: 39ch; margin: 1.2rem 0 1.5rem; font-size: 1.1rem; }
+
+.btn-primary {
+  --bs-btn-color: #172f24;
+  --bs-btn-bg: #e9d9a4;
+  --bs-btn-border-color: #e9d9a4;
+  --bs-btn-hover-color: #172f24;
+  --bs-btn-hover-bg: #fff0c2;
+  --bs-btn-hover-border-color: #fff0c2;
+  --bs-btn-active-color: #172f24;
+  --bs-btn-active-bg: #dac789;
+  --bs-btn-active-border-color: #dac789;
+  font-weight: 700;
+}
+
+.guide-section { padding-block: clamp(2rem, 5vw, 4rem); }
+.guide-section h2 { margin-bottom: 1.35rem; }
+.field-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0.3rem; }
+figcaption { margin-top: 0.45rem; font-size: 0.8rem; }
+.guide-details { background: #e6eddf; border-block: 1px solid #c4d1bd; }
+.accordion { --bs-accordion-active-bg: #d9e5d1; --bs-accordion-active-color: #233e2d; }
+.guide-footer { padding-block: 1.4rem; font-size: 0.875rem; }
+.guide-footer p { margin-bottom: 0.25rem; }
+.skip-link { position: absolute; z-index: 10; padding: 0.5rem 1rem; background: #fff; }
+:focus-visible { outline: 3px solid #9b5a23; outline-offset: 3px; }

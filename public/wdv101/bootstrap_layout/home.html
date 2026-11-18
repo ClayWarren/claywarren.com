@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A photographic guide to koalas and the trees they depend on.">
+  <meta name="author" content="Clay Warren">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Koala Field Guide | WDV101</title>
+  <!-- Clay Warren | WDV101 assignment 13-1 | Bootstrap three-column layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+  <nav class="navbar navbar-expand-sm guide-nav" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#main">Koala Field Guide</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#guide-nav" aria-controls="guide-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="guide-nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#habits">Field notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Questions</a></li>
+          <li class="nav-item"><a class="nav-link" href="../homework.html">WDV101 homework</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main id="main" tabindex="-1">
+    <header class="guide-hero">
+      <div class="container hero-copy">
+        <h1>Life in the eucalyptus canopy</h1>
+        <p>See how koalas climb, carry their young, and settle into the branches of eucalyptus trees.</p>
+        <a class="btn btn-primary" href="#habits">Read the field notes</a>
+      </div>
+    </header>
+    <section class="container guide-section" id="habits" aria-labelledby="habits-title">
+      <h2 id="habits-title">Three ways koalas use trees</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <article class="col">
+          <figure>
+            <img class="img-fluid field-photo" src="../koala_site/images/koala-climbing-tree.jpg" width="480" height="640" alt="A koala gripping a tree trunk among leaves.">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">DAVID ILIFF</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+          </figure>
+          <h3>Climbing</h3>
+          <p>Strong limbs and sharp claws help koalas grip bark. Look at how this koala wraps its limbs around the trunk to steady itself.</p>
+        </article>
+        <article class="col">
+          <figure>
+            <img class="img-fluid field-photo" src="../koala_site/images/koala-and-joey.jpg" width="480" height="640" alt="An adult koala carrying a joey on its back.">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala_and_joey.jpg">Benjamint444</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+          </figure>
+          <h3>Raising young</h3>
+          <p>After leaving the pouch, a joey can ride on its mother’s back. In this photo, the joey grips her fur while she holds onto the branch.</p>
+        </article>
+        <article class="col">
+          <figure>
+            <img class="img-fluid field-photo" src="../koala_site/images/koala-resting.jpeg" width="480" height="480" alt="A koala with closed eyes resting between branches.">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Koala02.jpeg">Mike Richey</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+          </figure>
+          <h3>Resting</h3>
+          <p>Koalas spend much of the day resting. A fork in a tree offers a perch where a koala can settle with its body supported on both sides.</p>
+        </article>
+      </div>
+    </section>
+    <section class="guide-details" id="faq" aria-labelledby="faq-title">
+      <div class="container guide-section">
+        <h2 id="faq-title">Common questions</h2>
+        <div class="accordion" id="koala-questions">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bear-answer" aria-expanded="true" aria-controls="bear-answer">Is a koala a bear?</button></h3>
+            <div id="bear-answer" class="accordion-collapse collapse show" data-bs-parent="#koala-questions">
+              <div class="accordion-body">A koala is a marsupial. A young koala, called a joey, spends its early development in its mother's pouch.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#habitat-answer" aria-expanded="false" aria-controls="habitat-answer">Why do connected woodlands matter?</button></h3>
+            <div id="habitat-answer" class="accordion-collapse collapse" data-bs-parent="#koala-questions">
+              <div class="accordion-body">Connected habitat helps koalas move between feeding and shelter trees. Roads and cleared land can make those journeys more difficult.</div>
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-4">Keep exploring</h3>
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action" href="../koala_site/gallery.html">Browse the Koala Site gallery</a>
+          <a class="list-group-item list-group-item-action" href="https://www.savethekoala.com/about-koalas/">Read about koalas at the Australian Koala Foundation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container guide-footer">
+    <p>Clay Warren · WDV101</p>
+    <p>Header photo by <a href="https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg">DAVID ILIFF</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
