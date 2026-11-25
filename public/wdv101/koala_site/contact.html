@@ -6,13 +6,14 @@
   <meta name="description" content="Contact Us page for the Koala Bear National Information Center.">
   <meta name="author" content="Clay Warren">
   <title>Contact Us | Koala Bear National Information Center</title>
-  <!-- Clay Warren | WDV101 | Koala Website Step 1 | September 9, 2026 -->
+  <!-- Clay Warren | WDV101 | Assignments 14-1 and 14-2 | November 25, 2026 -->
   <meta name="robots" content="noindex, nofollow">
   <!-- Google Fonts link method with system fallbacks in styles.css. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
   <!-- Assignment 9-1: one fixed-width container for the semantic layout. -->
@@ -33,10 +34,32 @@
     </ul>
   </nav>
   <main>
-    <section>
-      <h2>Contact Information</h2>
-      <!-- Content will be added in a future lesson. -->
-      <p class="intro">More information coming soon.</p>
+    <section class="contact-panel" aria-labelledby="form-title">
+      <h2 id="form-title">Send a question</h2>
+      <p>Ask about koalas, their habitat, or the information on this site. All fields are required.</p>
+      <p id="demo-note" class="highlight">This coursework demo displays a confirmation. It does not save or email your message. Please use sample details.</p>
+      <form method="post" action="form_response_basic.php" aria-describedby="demo-note">
+        <div class="contact-fields">
+          <label for="name">Name
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+          </label>
+          <label for="email">Email
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          </label>
+        </div>
+        <label for="topic">Topic
+          <select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="habitat">Koalas and habitat</option>
+            <option value="adoption">Adoption questions</option>
+            <option value="website">Website feedback</option>
+          </select>
+        </label>
+        <label for="message">Message
+          <textarea id="message" name="message" rows="6" maxlength="2000" required></textarea>
+        </label>
+        <button class="contact-button" type="submit">Submit message</button>
+      </form>
     </section>
   </main>
   <footer>

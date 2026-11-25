@@ -1,0 +1,56 @@
+/* Contact form and PHP response styles. */
+.contact-panel {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.contact-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-panel label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #244b3a;
+  font-weight: bold;
+}
+
+.contact-panel input,
+.contact-panel select,
+.contact-panel textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.65rem;
+  border: 1px solid #6b8263;
+  border-radius: 0.25rem;
+  background: #f7f9f3;
+  color: #253a30;
+  font: inherit;
+  font-weight: normal;
+}
+
+.contact-panel textarea { resize: vertical; }
+.contact-button {
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #244b3a;
+  border-radius: 0.25rem;
+  background: #244b3a;
+  color: ivory;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-button:hover { background: #38644d; }
+.contact-panel :focus-visible { outline: 3px solid #ae631d; outline-offset: 3px; }
+.contact-summary { padding: 1rem; background: #f7f9f3; overflow-wrap: anywhere; }
+.contact-summary dt { font-weight: bold; }
+.contact-summary dd { margin: 0 0 0.75rem; }
+.submitted-message { white-space: pre-wrap; }
+
+@media (max-width: 36rem) {
+  .contact-fields { grid-template-columns: 1fr; gap: 0; }
+}
