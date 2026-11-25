@@ -46,9 +46,19 @@
 }
 .contact-button:hover { background: #38644d; }
 .contact-panel :focus-visible { outline: 3px solid #ae631d; outline-offset: 3px; }
-.contact-summary { padding: 1rem; background: #f7f9f3; overflow-wrap: anywhere; }
-.contact-summary dt { font-weight: bold; }
-.contact-summary dd { margin: 0 0 0.75rem; }
+.contact-summary {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow-wrap: anywhere;
+  background: #f7f9f3;
+}
+.contact-summary caption { text-align: left; font-weight: bold; }
+.contact-summary th,
+.contact-summary td { border: 1px solid #9caf96; text-align: left; vertical-align: top; padding: 0.5rem; }
+.contact-summary th { width: 28%; }
+.contact-summary thead { background: #e0ead6; }
 .submitted-message { white-space: pre-wrap; }
 
 @media (max-width: 36rem) {

@@ -20,6 +20,7 @@ $topics = [
     'website' => 'Website feedback',
 ];
 
+// Adapted from the WDV101 form_response_basic.php classroom starter.
 $errors = [];
 $name = field('name');
 $email = field('email');
@@ -98,11 +99,18 @@ if (!$isPost) {
       <?php else: ?>
       <h2 id="response-title">Message processed</h2>
       <p>Thanks, <?= escapeHtml($name) ?>. Here’s what the form received.</p>
-      <dl class="contact-summary">
-        <dt>Email</dt><dd><?= escapeHtml($email) ?></dd>
-        <dt>Topic</dt><dd><?= escapeHtml($topics[$topic]) ?></dd>
-        <dt>Message</dt><dd class="submitted-message"><?= escapeHtml($message) ?></dd>
-      </dl>
+      <table class="contact-summary">
+        <caption>Submitted fields</caption>
+        <thead>
+          <tr><th scope="col">Field</th><th scope="col">Value</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Name</th><td><?= escapeHtml($name) ?></td></tr>
+          <tr><th scope="row">Email</th><td><?= escapeHtml($email) ?></td></tr>
+          <tr><th scope="row">Topic</th><td><?= escapeHtml($topics[$topic]) ?></td></tr>
+          <tr><th scope="row">Message</th><td class="submitted-message"><?= escapeHtml($message) ?></td></tr>
+        </tbody>
+      </table>
       <p class="highlight">This is a coursework demo. Your message was not saved or emailed.</p>
       <?php endif; ?>
       <p><a href="/wdv101/koala_site/contact">Return to the contact form</a></p>
