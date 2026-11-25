@@ -9,8 +9,8 @@
   },
   "rewrites": [
     {
-      "source": "/wdv101/koala_site/form_response_basic.php",
-      "destination": "/api/form_response_basic.php"
+      "source": "/wdv101/koala_site/form_response_basic",
+      "destination": "/api/form_response_basic"
     }
   ],
   "headers": [

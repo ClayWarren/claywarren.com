@@ -38,7 +38,8 @@
       <h2 id="form-title">Send a question</h2>
       <p>Ask about koalas, their habitat, or the information on this site. All fields are required.</p>
       <p id="demo-note" class="highlight">This coursework demo displays a confirmation. It does not save or email your message. Please use sample details.</p>
-      <form method="post" action="form_response_basic.php" aria-describedby="demo-note">
+      <!-- Vercel routes this extensionless action to form_response_basic.php. -->
+      <form method="post" action="form_response_basic" aria-describedby="demo-note">
         <div class="contact-fields">
           <label for="name">Name
             <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
